@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+               integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+          <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+               integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+               crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+               integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+               crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="styles.css">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+               rel="stylesheet">
+          <title>Form validation</title>
+     </head>
+<body>
+     <div class="alert alert-success alert-dismissible" id="success" style="display: none;">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>Success!</strong> You have successfully submited the form.
+     </div>
+	<div class="alert alert-danger alert-dismissible" id="fail" style="display: none;">
+          <button type="button" class="close" data-dismiss="alert">&times;</button>
+          <strong>Danger!</strong> Please fill the details correctly.
+     </div>
+
+	<div class="section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12 text-center align-self-center py-5">
+					<div class="section pb-5 pt-5 pt-sm-2 text-center">
+						<h6 class="mb-0 pb-3"><span>Sign Up </span><span>Log In</span></h6>
+			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+			          	<label for="reg-log"></label>
+						<div class="card-3d-wrap mx-auto">
+							<div class="card-3d-wrapper">
+								<div class="card-front">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Log In</h4>
+											<div class="form-group">
+												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
+												<!-- <i class="input-icon uil uil-at"></i> -->
+											</div>	
+											<div class="form-group mt-2">
+												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">
+												<!-- <i class="input-icon uil uil-lock-alt"></i> -->
+											</div>
+											<a href="#" class="btn mt-4">submit</a>
+                            				          <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your password?</a></p>
+				      					</div>
+			      					</div>
+			      				</div>
+								<div class="card-back">
+									<div class="center-wrap">
+										<div class="section text-center">
+											<h4 class="mb-4 pb-3">Sign Up</h4>
+											<div class="form-group">
+												<input type="text" name="logname" class="form-style" placeholder="Your Full Name" id="signname" autocomplete="off">
+												<!-- <i class="input-icon uil uil-user"></i> -->
+												<small id="namevalid" class="form-text invalid-feedback errorText">UserName must start with a letter and of 3-20 character.</small>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="signemail" autocomplete="off">
+												<!-- <i class="input-icon uil uil-at"></i> -->
+												<small id="emailvalid" class="form-text invalid-feedback errorText">UserName must start with aa letter and of 2-20 character.</small>
+											</div>	
+											<div class="form-group mt-2">
+												<input type="password" name="logpass" class="form-style" placeholder="Your Password" id="signpass" autocomplete="off">
+												<!-- <i class="input-icon uil uil-lock-alt"></i> -->
+												<small id="pwdvalid" class="form-text invalid-feedback errorText">Paasowrd must have _ - @ $ % ^ & * ! ~ # ? . these special character and of length 8-16.</small>
+											</div>
+											<div class="form-group mt-2">
+												<input type="number" name="logmob" class="form-style" placeholder="Your Mobile No." id="signmob" autocomplete="off">
+												<!-- <i class="input-icon uil uil-lock-alt"></i> -->
+												<small id="mobvalid" class="form-text invalid-feedback errorText">Mobile no. must start with 6,7,8,9 and have 10 digit</small>
+											</div>
+											<a href="#" id="signBtn" class="btn mt-4">submit</a>
+				      					</div>
+			      					</div>
+			      				</div>
+			      			</div>
+			      		</div>
+			      	</div>
+		      	</div>
+	      	</div>
+	    </div>
+	</div>
+
+
+     <script src="index.js"></script>
+</body>
+</html>
